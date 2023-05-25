@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" defer src="scripts/main.js"></script>
+    <title>Home Page</title>
+  </head>
+  <body class="h-100 d-flex">
+    <div class="first__side w-25 bg-warning">
+      <ul
+        class="list-unstyled h-100 d-flex flex-column justify-content-around align-items-center text-capitalize"
+      >
+        <li>
+          <h3 id="user-profile">
+            <a href="#" class="text-decoration-none text-dark nav"
+              >Your profile 👤</a
+            >
+          </h3>
+        </li>
+        <li>
+          <h3 id="user-random-meal">
+            <a href="#" class="text-decoration-none text-dark nav">
+              Get random meal 🎲
+            </a>
+          </h3>
+        </li>
+        <li>
+          <h3 id="shared-meals" class="text-center">
+            <a href="#" class="text-decoration-none text-dark nav"
+              >See what other<br />people like 🍴</a
+            >
+          </h3>
+        </li>
+        <li>
+          <h3 id="log-out" class="text-center">
+            <a href="#" class="text-decoration-none text-dark nav"
+              >Log Out 🚪</a
+            >
+          </h3>
+        </li>
+      </ul>
+    </div>
+    <div class="second__side w-75 d-flex flex-column mt-2 position-relative">
+      <form
+        class="d-flex gap-2 justify-content-center mb-3 mt-3 position-relative"
+      >
+        <span class="w-50 position-relative">
+          <input
+            type="text"
+            class="form-control w-100"
+            id="search-meal-inp"
+            placeholder="Search for a meal..."
+          />
+
+          <img
+            src="images/close-icon.png"
+            class="position-absolute top-0 end-0 m-2 hide"
+            width="20"
+            height="20"
+            id="remove-input-icon"
+          />
+        </span>
+        <button class="btn btn-warning text-white w-25" id="search-meal-btn">
+          Search
+        </button>
+      </form>
+      <h1 class="text-center mt-5"></h1>
+      <div
+        class="spinner-grow text-warning position-absolute top-50 start-50 hide"
+        id="spinner"
+      ></div>
+      <div class="h-100 p-2 d-flex flex-column" id="meal">
+      
+      </div>
+    </div>
+  </body>
+</html>

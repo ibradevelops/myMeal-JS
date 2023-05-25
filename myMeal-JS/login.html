@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 w-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <link rel="stylesheet" href="css/login.css" />
+    <script type="module" defer src="scripts/login.js"></script>
+    <title>Login Page</title>
+  </head>
+  <body class="h-100 w-100 d-flex overflow-hidden">
+    <div
+      class="first__side w-50 bg-warning d-flex h-100 align-items-center justify-content-center gap-5 flex-column"
+    >
+      <h1 class="text-capitalize text-center from-down-anime">
+        Don't know what to eat?<br/ >You are on right place!
+      </h1>
+      <img
+        src="images/meal.png"
+        alt=""
+        width="250"
+        height="250"
+        class="from-down-anime"
+      />
+    </div>
+    <div class="second__side w-50 h-100 d-flex">
+      <form
+        class="w-100 d-flex flex-lg-column h-100 align-items-center justify-content-center gap-3 from-up-anime"
+      >
+        <h4 class="text-capitalize">Please login to continue</h4>
+        <input
+          type="text"
+          class="form-control w-50"
+          placeholder="Username"
+          id="username-input"
+        />
+        <span class="w-50 position-relative">
+          <input
+            type="password"
+            class="form-control w-100"
+            placeholder="Password"
+            id="password-input"
+          />
+          <ion-icon
+            name="eye-outline"
+            id="show-pass"
+            class="position-absolute hide"
+          ></ion-icon>
+          <ion-icon
+            name="eye-off-outline"
+            id="hide-pass"
+            class="position-absolute hide"
+          ></ion-icon>
+        </span>
+        <button class="btn btn-warning w-50 text-white fw-bold" id="login-btn">
+          Login
+        </button>
+        <p id="msg" class="text-capitalize text-start w-50 text-danger"></p>
+        <span class="text-capitalize mt-2 d-flex gap-2 w-50">
+          <h5>Don't have an account?</h5>
+          <a href="register.html" class="text-secondary"
+            >Click here to register</a
+          >
+        </span>
+      </form>
+    </div>
+    <div class="spinner-grow text-warning hide" id="spinner"></div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

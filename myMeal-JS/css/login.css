@@ -1,0 +1,54 @@
+.hide {
+  display: none !important;
+}
+
+@keyframes showIt {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fromDown {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.from-up-anime {
+  animation: fromUp 1s;
+}
+
+.from-down-anime {
+  animation: fromDown 1s;
+}
+
+#spinner {
+  position: absolute;
+  top: 10%;
+  left: 73%;
+}
+
+#show-pass,
+#hide-pass {
+  font-size: 1.6rem;
+  cursor: pointer;
+  right: 0;
+  top: 20%;
+  margin-right: 0.4rem;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 show-it-anime">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/register.css" />
+    <script type="module" defer src="scripts/register.js"></script>
+    <title>Register Page</title>
+  </head>
+  <body
+    class="h-100 w-100 bg-warning d-flex justify-content-center gap-5 align-items-center flex-column"
+  >
+    <img src="images/meal.png" />
+    <form class="w-25 d-flex flex-column gap-2">
+      <input
+        type="text"
+        placeholder="Your Username..."
+        id="username-input"
+        class="form-control"
+      />
+      <select class="form-select">
+        <option>Click Here To Select Your Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input
+        id="password-input"
+        type="password"
+        class="form-control"
+        placeholder="Your Password..."
+      />
+      <input
+        id="repeat-password-input"
+        type="password"
+        class="form-control"
+        placeholder="Repeat Your Password..."
+      />
+      <button id="register-btn" class="btn btn-light w-100">Register</button>
+    </form>
+    <div class="spinner-grow text-light hide" id="spinner"></div>
+  </body>
+</html>

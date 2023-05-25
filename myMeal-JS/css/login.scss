@@ -1,0 +1,22 @@
+@import "global";
+.from-up-anime {
+  animation: fromUp 1s;
+}
+
+.from-down-anime {
+  animation: fromDown 1s;
+}
+#spinner {
+  position: absolute;
+  top: 10%;
+  left: 73%;
+}
+
+#show-pass,
+#hide-pass {
+  font-size: 1.6rem;
+  cursor: pointer;
+  right: 0;
+  top: 20%;
+  margin-right: 0.4rem;
+}

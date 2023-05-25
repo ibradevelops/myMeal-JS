@@ -1,0 +1,33 @@
+@import "global";
+ul {
+  li {
+    .nav {
+      transition: 0.3s !important;
+      &:hover,
+      &:active {
+        color: white !important;
+      }
+    }
+  }
+}
+//
+#remove-input-icon,
+#hamburger-menu {
+  cursor: pointer;
+}
+#save-icon {
+  background: none;
+  border: none;
+}
+
+.single-meal-btns {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+  }
+}
+
+.meal-btn {
+  cursor: pointer;
+}

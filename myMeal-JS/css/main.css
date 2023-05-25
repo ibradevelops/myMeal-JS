@@ -1,0 +1,60 @@
+.hide {
+  display: none !important;
+}
+
+@keyframes showIt {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fromDown {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ul li .nav {
+  transition: 0.3s !important;
+}
+ul li .nav:hover, ul li .nav:active {
+  color: white !important;
+}
+
+#remove-input-icon,
+#hamburger-menu {
+  cursor: pointer;
+}
+
+#save-icon {
+  background: none;
+  border: none;
+}
+
+.single-meal-btns {
+  cursor: pointer;
+}
+.single-meal-btns:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.meal-btn {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
