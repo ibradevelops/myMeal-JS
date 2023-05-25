@@ -4,3 +4,5 @@ myMeal project is web app where users can create account, get inspiration of wha
 save their meals, share their meals, and also see meals that other users shared.
 I used rest services for data, this application is made mostly to demonstrate my knowledge.
 This app is not supported on smaller devices like tablets or phones
+Live version: 
+https://ibra-develops-mymeal.netlify.app/
